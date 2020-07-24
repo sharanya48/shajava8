@@ -1,0 +1,9 @@
+● Create a Stream<String> via stream()
+● Filter the stream via filter() and a predicate for elements starting with “a”
+and length 3
+● Collect the resulting Stream<String> into a new List<String> using collect()
+and Collectors.toList()
+return list
+ .stream()
+ .filter(s -> s.startsWith("a") && s.length()==3)
+ .collect(Collectors.toList());

@@ -1,0 +1,10 @@
+● Create a Stream<Integer> via stream()
+● Transform each element to a DoubleStream using mapToDouble() and a
+lambda
+● Calculate the average as an OptionalDouble using average()
+● Get the value as a double using getAsDouble()
+return list
+ .stream()
+ .mapToDouble(i -> (double)i)
+ .average()
+ .getAsDouble();
